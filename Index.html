@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Aeroterra</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    
+    <form class="form-test" id="form-test" method="GET">
+      <form role="form">
+      <div class="form-group row">
+          <label for="NombreImput" class="col-2 col-form-label">Nombre</label>
+         <div class="col-md-9 offset-md-1">
+            <input class="form-control"type="search" placeholder="Av. E. Madero 1020" id="NombreImput">
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="DireccionInput" class="col-2 col-form-label">Direccion</label>
+          <div class="col-md-9 offset-md-1">
+            <input class="form-control" type="search" placeholder="Av. E. Madero 1020" id="DireccionInput">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="TelefonoInput" class="col-2 col-form-label">Telefono</label>
+          <div class="col-md-9 offset-md-1">
+            <input class="form-control" type="search" placeholder="54 9 11 5272 0900" id="TelefonoInput">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="CategoriaInput" class="col-2 col-form-label">Categoria</label>
+          <div class="col-md-9 offset-md-1">
+            <select class="form-control" type="text" placeholder="Seleccionar" id="CategoriaInput">
+                <option>Comercial</option>
+                <option>Residencial</option>
+                <option>Mixta</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="CoordInput" class="col-2 col-form-label">Coord.</label>
+          <div class="col-md-9 offset-md-1">
+            <input class="form-control" type="search" placeholder="Av. E. Madero 1020" id="CoordInput">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        
+          </form>
+
+    <div id="map"></div>
+    <!--Script API google maps con la API-KEY -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtWBP3HJRHFgQKTJxbFaifAz6NwVlano&callback=initMap"
+    async defer></script>
+   <script src="script.js"></script>
+  </body>
+</html>
